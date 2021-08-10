@@ -8,6 +8,7 @@ body{
   font-size: 14px;
   line-height: 19px;
   font-weight:400;
+  color: #303030;
 }
 a{
   text-decoration: none;
@@ -16,6 +17,25 @@ a{
 ul{
   list-style: none;
 }
+img{
+  max-width: 100%;
+}
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+.title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+/* header START */
+
 .header {
   background-image: url(../images/bg-top.jpg);
   background-position: center center;
@@ -57,13 +77,16 @@ ul{
 .header__button {
   margin-top: 50px;
   margin-bottom: auto;
+
+  align-self: center; /*чтобы не растягивалась на всю ширину*/
 }
 .button__text{
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   display: inline-block;
-  transform: translate(-55px, -17px);
+  transform: translateY(-17px);
+  margin-left: -55px;
 }
 .social {
   display: flex;
@@ -73,4 +96,132 @@ ul{
 
 .social__link {
   padding: 0 10px;
+}
+
+/* services START  */
+
+.services {
+  margin-bottom: 150px;
+}
+.services__inner{
+  display: flex;
+}
+.services__content {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+.services__box {
+  margin-bottom: 50px;
+}
+.services__box-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.services__img {
+  object-fit: cover;
+}
+
+/* info START */
+
+.info {
+  margin-bottom: 150px;
+}
+.info__inner {
+  display: flex;
+}
+.info__box {
+  flex-basis: 510px;
+  margin-right: 90px;
+}
+.info-tabs {
+  margin-bottom: 100px;
+}
+.info-tabs__items {
+  margin-bottom: 120px;
+}
+.info-tabs__item--active{
+  border-bottom: 1px solid #303030;
+}
+.info-tabs__item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  margin-right: 40px;
+
+}
+.info-tabs__content {
+  display: none;
+}
+.info-tabs__content--active{
+  display: block;
+}
+.info-slider {
+  max-width: 510px;
+}
+.ifo-slider__img {
+  margin-right: 40px;
+  float: left;/*чтобы картинку обтекал текст (работает с картинками и текстами)*/
+}
+.info-slider__text {
+  padding-bottom: 15px;
+}
+.info__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.info__list-item {
+  flex-basis: 235px;
+  margin-bottom: 17px;
+}
+.info__List-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.info__content {
+  flex-basis: 600px;
+}
+.info__content-text {
+  font-weight:700;
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 17px;
+}
+.info__content-img {
+
+}
+.slick-arrow{
+  position: absolute;
+  left: 275px;
+  bottom: -3px;z
+  z-index: 5;
+  cursor: pointer;
+}
+.slick-right{
+  left: 340px;
+}
+
+/* blockquote START */
+
+.blockquote {
+  padding: 128px 10px 144px;
+  background-image: url(/images/blockquote.jpg);
+  background-position:  center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  margin-bottom: 150px;
+  text-align: center;
+}
+.blockquote__text {
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 57px;
+  color: #FFFFFF;
+  max-width: 670px;
+  margin: 0 auto;
 }
